@@ -2,10 +2,16 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    /*CSS that uses "*" is global, affecting all elements.
+    These settings explain that all elements should include
+    padding and margin within their size, and that their
+    padding and margin should default to 0 unless otherwise
+    specified.*/
 }
 
 body {
     background-color: #d9dcd6;
+    /*This selects the background color for the page content.*/
 }
 
 header {
@@ -13,15 +19,26 @@ header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
+    /*This gives the header padding, defines which fonts should
+    be used, gives it a different background color than the
+    color that we specified above, and gives the text a color of
+    white.*/
 }
 
 header h1 {
     display: inline-block;
     font-size: 48px;
+    /*This specifies that the company name and anchor links should
+    be displayed on the same line, but that we can still change the
+    size of the element, and that the company name should
+    have a relatively larger text size of 48 pixels.*/
 }
 
 header h1 #seo {
     color: #d9dcd6;
+    /*This changes the characters of "s", "e", and "o" within the
+    company name to a slightly different color, emphasizing the
+    company's focus on search engine optimization.*/
 }
 
 header nav {
@@ -30,11 +47,19 @@ header nav {
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
+    /*This states that the anchor links in our navigation bar should
+    have padding and margin that somewhat center them when combined
+    with our global border-box setting. It also specifies that the nav
+    bar links should be organized to the right of the page, which fonts
+    should be used, and that they should be larger than default text,
+    but comparatively smaller than our company name.*/
 }
 
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
+    /*This allows our nav bar to be displayed on the same line even as
+    a list, and to give 25 pixels of separation between the links.*/
 }
 
 #background-img {
@@ -44,31 +69,56 @@ header nav ul li {
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
+    /*This is our background image. It's displayed in our CSS sheet
+    because it's not consequential to the information on our page, and
+    doesn't need to be accessed by page-readers. Our code specifies that
+    the image should span the width of our page, have a height of 800
+    pixels, have 25 pixels of separation from our main content below,
+    and that the background image should be centered within our page.*/
 }
 
 .links {
     color: #ffffff;
     text-decoration: none;
+    /*This states that our links shouldn't be underlined or colored
+    differently from our text.*/
 }
 
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
+    /*This states that our main content should take up 75% of the width
+    of the page, that they should have have a 20 pixel margin from the
+    left boundary of the page, and that it should fit neatly with our
+    sidebar.*/
 }
 
 .float-left {
     float: left;
     margin-right: 25px;
+    /*This applies to our content with the class of "float-left",
+    which includes our seach engine optimization and social media
+    management sections. By giving this class to two sections of our main
+    content, we can consolidate our code. It makes the images and text 
+    display starting from the left side of the page, and for there to be a
+    25 pixel margin between the images and the text.*/
 }
 
 .float-right {
     float: right;
     margin-left: 25px;
+    /*This applies to our content with the class of "float-right".
+    This is for our online reputation management section. Contrary to the
+    above code, this section will display beginning from the right side of
+    its section. Like the above, it will also have a margin of 25 pixels
+    between our image and our text.*/
 }
 
 .content-text {
     font-size: 16px;
+    /*This specifies the size of the non-heading text that's within our main
+    content sections.*/
 }
 
 #search-engine-optimization,
@@ -80,12 +130,23 @@ header nav ul li {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
+    /*The above has been consolidated from three different sections. ID's were used to
+    preserve the functionality of the anchor links. It specifies that
+    each of our main body sections should have 20 pixels of separation from
+    each other, have 50 pixels of padding that pushes the content within each section
+    inward when combined with our global border-box setting, that each main content
+    box should have a height of 300 pixels, which fonts browsers should use to display
+    our page, that each content box should be a brighter blue color, and that the text
+    in each should be white.*/
 }
 
 #search-engine-optimization img,
 #online-reputation-management img,
 #social-media-marketing img {
     max-height: 200px;
+    /*The above has been consolidated from three different section. It states that each
+    image contained in our main content boxes should have a maximum height of 200 pixels,
+    which is two thirds of the content boxes' sizes.*/
 }
 
 #search-engine-optimization h2,
@@ -93,6 +154,9 @@ header nav ul li {
 #social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
+    /*The above has been consolidated from three different sections. It states that each
+    of the (sub)headers within our content boxes should have 20 pixels of separation from
+    their following text, and that their text size should be 36 pixels in height.*/
 }
 
 .benefits {
@@ -104,6 +168,12 @@ header nav ul li {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
+    /*The above applies to the "benefits" class, which is carried by the content in our
+    sidebar. It gives the sidebar 20 pixels of separation from the right side of the page,
+    20 pixels of padding, that it should behave with the content to its left to fill the
+    page correctly, that it should be on the right side of the page, it should take up 20%
+    of the page width, which fonts should be used, and that it should have a slightly darker
+    blue than that of our main content.*/
 }
 
 #benefit-lead,
@@ -111,6 +181,9 @@ header nav ul li {
 #benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
+    /*The above has been consolidated from three sections. It applies to each of our sidebar
+    sections and states that they should be separated from each other by 32 pixels and that
+    its text should be white.*/
 }
 
 #benefit-lead h3,
@@ -118,14 +191,20 @@ header nav ul li {
 #benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
+    /*The above has been consolidated from three sections. It states that each of the
+    (sub)headers of our sidebar should have 10 pixels of separation from their accompanying
+    text, and that they should be centered within the sidebar.*/
 }
 
 #benefit-lead img,
 #benefit-brand img,
 #benefit-cost img {
     display: block;
-    margin: 10px auto;
+    margin: 10px;
     max-width: 150px;
+    /*The above has been consolidated from three sections. It states that the icons within our
+    sidebar should be displayed underneath the (sub)headers, that they should have 10 pixels of
+    clearance from surrounding text, and that they shouldn't exceed 150 pixels in height.*/
 }
 
 footer {
@@ -133,8 +212,13 @@ footer {
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+    /*The above applies to our footer. It states that it should have 30 pixels of padding. It
+    should also be clear from being grouped with both our main content and sidebar and display
+    at the bottom of the page instead. It states what text should be used for the footer, and
+    that it should be centered within the page.*/
 }
 
 footer h2 {
     font-size: 20px;
+    /*The above shows that the first line of our footer should have a font size of 20 pixels.*/
 }
