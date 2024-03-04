@@ -67,4 +67,4 @@ HTML elements. Horiseon's CSS sheet was also optimized with the following change
 
 ## Acknowledgements
 
-Thank you to my teachers and my class mates for guiding me on my educational journey.
+Thank you to my teachers and my classmates for guiding me on my educational journey.
