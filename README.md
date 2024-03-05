@@ -26,7 +26,9 @@ Refactoring a website using HTML, CSS, and Git
 
 **Complete**
 
-https://github.com/aaguimond/module01-challenge
+[Git Hub Repository](https://github.com/aaguimond/module01-challenge)
+
+[Live Web Page](https://aaguimond.github.io/module01-challenge)
 
 ## Purpose
 
@@ -41,7 +43,9 @@ This project was completed using [Git Bash](https://git-scm.com/about), [Visual 
 ## Improvements made
 
 There were many improvements made to the starter code that are documented below. A screenshot of the 
-complete web page can be accessed [here](./assets/images/HoriseonFront.png).
+web page is displayed below:
+
+![here](./assets/images/HoriseonFront.png)
 
 ### HTML Elements
 
@@ -50,11 +54,21 @@ that they're able to do with their now functional website.
 In order to live up to its namesake, Horiseon's page needed to have its HTML elements optimized:
 * The page was given a descriptive title
 * Semantic HTML elements were used
-* The page's anchor links were fixed. Screenshots of where the links lead to on the page are [here](./assets/images/HoriseonLink1.png), [here](./assets/images/HoriseonLink2.png), and [here](./assets/images/Horiseonlink3.png)
+* The page's anchor links were fixed. Screenshots of where the links lead to on the page are as 
+follows:
+
+![here](./assets/images/HoriseonLink1.png)
+Search Engine Optimization
+
+![here](./assets/images/HoriseonLink2.png)
+Online Reputation Management
+
+![here](./assets/images/Horiseonlink3.png)
+Social Media Marketing
 
 ### CSS Elements
 
-As we know, a webpage is only presentable when it has its cascading style sheets in sync with its
+As we know, a webpage is only presentable when it has its cascading style sheet(s) in sync with its
 HTML elements. Horiseon's CSS sheet was also optimized with the following changes:
 * IDs and Classes were given to elements for the CSS sheet to more efficiently grant them style
 * Redundant CSS elements were consolidated for a cleaner code
